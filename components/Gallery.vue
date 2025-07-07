@@ -1,5 +1,5 @@
 <template>
-    <div class="container py-5">
+    <div class="container py-5" id="galeri">
         <div class="text-center mb-5">
             <span class="badge text-dark mb-2">Galeri</span>
             <h2 class="fw-bold">Agenda Kota & Kegiatan Warga</h2>

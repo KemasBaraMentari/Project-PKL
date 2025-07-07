@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="tentangkami">
     <!-- Navigation Tabs -->
     <div class="d-flex justify-content-start my-4 ms-5">
       <ul class="nav nav-pills bg-light rounded-pill p-2">

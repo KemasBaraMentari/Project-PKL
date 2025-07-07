@@ -1,7 +1,7 @@
 <template>
-  <div class="container-fluid text-white" style="margin-bottom: 120px;">
+  <div class="container-fluid text-white" style="margin-bottom: 120px;" id="kontak">
     <!-- Kontak Kami -->
-    <div class="row">
+    <div class="row bg-wrap">
       <div class="col">
         <div class="py-5">
           <div class="text-center">
@@ -19,48 +19,50 @@
 
     <!-- Gmaps -->
     <div class="row my-5">
-      <div class="col mx-3" style="margin-bottom: 60px;">
-        <GoogleMap api-key="AIzaSyBbd0dFoc5K1ZEU53ebYivOofSHGgqj-wI" mapId="98f051d6389bcfc"
-          style="width: 100%; height: 500px; border-radius: 50px" :center="center" :zoom="15">
-          <AdvancedMarker :options="markerOptions">
-            <div>
-              <svg width="54" height="58" viewBox="0 0 104 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_d_10075_4125)">
-                  <rect x="12.7812" y="0.5" width="79" height="79" rx="39.5" fill="#1157BC" />
-                  <path
-                    d="M72.3267 54.3889H76.7812V58.5H27.7812V54.3889H32.2358V23.5556C32.2358 22.4203 33.233 21.5 34.4631 21.5H56.7358C57.9659 21.5 58.9631 22.4203 58.9631 23.5556V54.3889H63.4176V33.8333H70.0994C71.3296 33.8333 72.3267 34.7536 72.3267 35.8889V54.3889ZM41.1449 37.9444V42.0556H50.054V37.9444H41.1449ZM41.1449 29.7222V33.8333H50.054V29.7222H41.1449Z"
-                    fill="white" />
-                </g>
-                <defs>
-                  <filter id="filter0_d_10075_4125" x="0.78125" y="0.5" width="103" height="107"
-                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                      result="hardAlpha" />
-                    <feMorphology radius="12" operator="erode" in="SourceAlpha"
-                      result="effect1_dropShadow_10075_4125" />
-                    <feOffset dy="16" />
-                    <feGaussianBlur stdDeviation="12" />
-                    <feComposite in2="hardAlpha" operator="out" />
-                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0" />
-                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10075_4125" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10075_4125" result="shape" />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
-          </AdvancedMarker>
-        </GoogleMap>
+      <div class="col ms-3" style="margin-bottom: 60px;">
+        <div class="map-wrapper rounded-3">
+          <GoogleMap api-key="AIzaSyBbd0dFoc5K1ZEU53ebYivOofSHGgqj-wI" mapId="98f051d6389bcfc"
+            style="width: 100%; height: 350px;" :center="center" :zoom="15">
+            <AdvancedMarker :options="markerOptions">
+              <div>
+                <svg width="54" height="58" viewBox="0 0 104 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_10075_4125)">
+                    <rect x="12.7812" y="0.5" width="79" height="79" rx="39.5" fill="#1157BC" />
+                    <path
+                      d="M72.3267 54.3889H76.7812V58.5H27.7812V54.3889H32.2358V23.5556C32.2358 22.4203 33.233 21.5 34.4631 21.5H56.7358C57.9659 21.5 58.9631 22.4203 58.9631 23.5556V54.3889H63.4176V33.8333H70.0994C71.3296 33.8333 72.3267 34.7536 72.3267 35.8889V54.3889ZM41.1449 37.9444V42.0556H50.054V37.9444H41.1449ZM41.1449 29.7222V33.8333H50.054V29.7222H41.1449Z"
+                      fill="white" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_d_10075_4125" x="0.78125" y="0.5" width="103" height="107"
+                      filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha" />
+                      <feMorphology radius="12" operator="erode" in="SourceAlpha"
+                        result="effect1_dropShadow_10075_4125" />
+                      <feOffset dy="16" />
+                      <feGaussianBlur stdDeviation="12" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10075_4125" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10075_4125" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+              </div>
+            </AdvancedMarker>
+          </GoogleMap>
+        </div>
       </div>
 
-      <div class="col mx-4">
+      <div class="col-md-6 me-3">
         <!-- Alamat -->
-        <div class="row">
-          <div class="col rounded" style="background-color: #F4F4F4; margin-bottom: 20px;">
-            <div class="d-flex align-items-center rounded-3 p-4"
+        <div class="row mx-0 my-0">
+          <div class="col rounded bg-white" style="margin-bottom: 20px;">
+            <div class="d-flex flex-coloumn gap-3 align-items-center rounded-3 p-4"
               style="border-left: 6px solid transparent;">
               <!-- Ikon -->
-              <svg width="75" height="75" viewBox="0 0 114 115" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="100" height="100" viewBox="0 0 114 115" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_9087_70811)">
                   <rect x="14.7812" y="11.5" width="84" height="84" rx="42" fill="#F7C000" />
                   <path
@@ -100,11 +102,10 @@
 
         <!-- Lainnya -->
         <div class="row">
-          <div class="col">
-            <div class="d-flex align-items-center bg-light rounded-3 p-4 shadow-sm"
-              style="border-left: 6px solid transparent;">
+          <div class="col h-100">
+            <div class="bg-white rounded p-4 shadow-sm h-100" style="border-left: 6px solid transparent;">
               <!-- Ikon -->
-              <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="80" height="80" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_9087_70817)">
                   <rect x="14.7812" y="11" width="84" height="84" rx="42" fill="#F7C000" />
                   <path
@@ -132,7 +133,7 @@
 
               <!-- Konten -->
               <div>
-                <h5 class="mb-1 text-dark fw-semibold">Jam Operasional</h5>
+                <h5 class="mb-1 text-dark fw-semibold mt-1">Jam Operasional</h5>
                 <p class="mb-0 text-secondary small">
                   Senin - Jumat 08.00 - 16.30
                 </p>
@@ -141,10 +142,10 @@
           </div>
 
           <div class="col">
-            <div class="d-flex align-items-center bg-light rounded-3 p-4 shadow-sm"
+            <div class="d-flex align-items-start flex-column bg-white rounded-3 p-4 shadow-sm"
               style="border-left: 6px solid transparent;">
               <!-- Ikon -->
-              <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="80" height="80" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_9087_70823)">
                   <rect x="14.7812" y="11" width="84" height="84" rx="42" fill="#F7C000" />
                   <path
@@ -168,8 +169,8 @@
               </svg>
 
               <!-- Konten -->
-              <div>
-                <h5 class="mb-1 text-dark fw-semibold">Nomor Telepon</h5>
+              <div class="h-100">
+                <h5 class="mb-1 text-dark fw-semibold mt-1">Nomor Telepon</h5>
                 <p class="mb-0 text-secondary small">
                   +62 856-3306-260
                 </p>
@@ -199,5 +200,18 @@ const pinOptions = { background: '#FBBC04' }
 
 .badge {
   background-color: #ffeaa7;
+}
+
+.map-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+}
+
+.bg-wrap{
+  background-image: url('/images/Pattern.svg');
+  background-size: 45%;
+  background-position: left;
+  background-repeat: no-repeat;
 }
 </style>

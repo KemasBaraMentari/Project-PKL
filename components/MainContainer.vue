@@ -1,11 +1,11 @@
 <template>
-  <div class="container-fluid my-5 p-3">
+  <div class="container-fluid my-2 p-3" id="blog">
     <div class="row">
-      <div class="col mt-3">
+      <div class="col">
         <div class="container py-5">
           <!-- Section Title -->
           <div class="text-center mb-4">
-            <span class="badge text-dark mb-2">Blog & Bacaan</span>
+            <span class="badge text-dark mb-0">Blog & Bacaan</span>
             <h2 class="fw-bold">Cerita Transformasi & Inovasi Kota</h2>
             <p class="text-muted">
               Baca artikel, opini, dan kisah sukses seputar teknologi, kota pintar, dan inovasi layanan publik di

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-white py-5 my-5">
+  <div class="container-fluid text-white py-5 my-5" id="layanan">
     <div class="row mx-auto my-5">
       <!-- Kiri: Informasi dan tombol -->
       <div class="col-lg-4 px-5 my-auto">

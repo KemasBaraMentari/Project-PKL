@@ -1,8 +1,7 @@
 <template>
-  <div class="container-fluid text-white my-4 p-3">
-    <div class="row mx-auto my-2"></div>
-    <div class="row  mx-4">
-      <div class="col">
+  <div class="container-fluid text-white my-5" id="event">
+    <div class="row bg-wrap">
+      <div class="col mt-3">
         <section class="agenda-section text-center py-5">
           <span class="badge text-dark fw-semibold rounded-pill px-3 py-2"
             style="background-color: #ffeaa7; font-size: 20px;">Agenda & Kegiatan</span>
@@ -39,13 +38,12 @@
 
 
     <div class="row">
-      <div class="col">
+      <div class="col mb-5">
         <div class="mt-5 text-center">
           <button class="btn btn-custom">Lihat Selengkapnya →</button>
         </div>
       </div>
     </div>
-    <div class="row mx-auto my-3"></div>
   </div>
 </template>
 
@@ -107,4 +105,12 @@ const agendaList = [
 .btn-custom:hover {
   background-color: #dfe6e9;
 }
+
+.bg-wrap{
+  background-image: url('/images/Pattern.svg');
+  background-size: 45%;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 </style>

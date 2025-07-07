@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-section mt-5">
+  <div class="hero-section mt-5" id="beranda">
     <div class="container-fluid p-5">
       <div class="row align-items-center">
         <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
@@ -65,9 +65,10 @@ onBeforeUnmount(() => {
   background-image:
     linear-gradient(to left, #133260 50%, transparent 50%),
     url('/images/Pattern.svg');
-  background-size: cover, contain;
-  background-repeat: no-repeat, repeat;
-  background-position: left center, left center;
+  background-size: contain;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-position: left center, left center; */
   border-radius: 20px;
   margin: auto 30px;
 }
