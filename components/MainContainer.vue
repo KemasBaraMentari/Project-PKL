@@ -51,6 +51,12 @@
         </div>
       </div>
     </div>
+    
+    <div class="row text-center">
+      <div class="col">
+        <NuxtLink to="/main-container-detail" class="btn fw-semibold mt-3 rounded-pill px-4 py-2 text-white" style="background-color: #133260;">Lihat Selengkapnya</NuxtLink>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse m-2" id="navbarNav">
         <ul class="navbar-nav ms-auto nav-underline">
           <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
-            <a class="nav-link m-2 fw-semibold" :class="{ active: activeIndex === index }" :href="item.link">
+            <a class="nav-link m-2 fw-semibold" :class="{ active: $route.path === item?.path }" :href="item.link">
               {{ item.name }}
             </a>
           </li>
@@ -27,7 +27,8 @@ export default {
       menuItems: [
         {
           name: "Beranda",
-          link: "#beranda",
+          link: "/",
+          path: '/'
         },
         {
           name: "Tentang Kami",
@@ -36,10 +37,12 @@ export default {
         {
           name: "Layanan",
           link: "#layanan",
+          path: '/service-detail'
         },
         {
           name: "Blog",
           link: "#blog",
+          path: "/main-container-detail"
         },
         {
           name: "Event",

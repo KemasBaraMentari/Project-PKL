@@ -10,7 +10,7 @@
           Temukan layanan dan inisiatif kota yang memudahkan hidup Anda — dari utilitas harian hingga tempat wisata,
           dari peluang bisnis hingga kemudahan mobilitas.
         </p>
-        <button class="btn btn-light fw-semibold mt-3 rounded-pill px-4 py-2">Lihat Selengkapnya</button>
+        <NuxtLink to="/service-detail" class="btn btn-light fw-semibold mt-3 rounded-pill px-4 py-2">Lihat Selengkapnya</NuxtLink>
 
       <!-- Kanan : Card -->
       </div>

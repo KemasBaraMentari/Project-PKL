@@ -14,8 +14,8 @@
       </div>
     </div>
 
-    <div class="row g-4 mt-4 justify-content-center">
-      <div class="col-md-4" v-for="(card, index) in agendaList" :key="index">
+    <div class="row g-4 mt-4  flex-nowrap">
+      <div class="event-card" v-for="(card, index) in agendaList" :key="index" style="width: calc(100%/3);">
         <div class="card border-0 position-relative overflow-hidden rounded-4">
           <!-- Gambar -->
           <img :src="card.image" class="w-100 h-100 object-fit-cover" style="max-height: 550px;" :alt="card.title" />
@@ -106,11 +106,30 @@ const agendaList = [
   background-color: #dfe6e9;
 }
 
-.bg-wrap{
+.bg-wrap {
   background-image: url('/images/Pattern.svg');
   background-size: 45%;
   background-position: left;
   background-repeat: no-repeat;
 }
 
+.event-card {
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  position: relative;
+}
+
+.card:hover {
+  width: 600px;
+  transition: all 0.3s ease;
+}
+
+.event-card .card {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 </style>
