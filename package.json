@@ -16,6 +16,7 @@
     "vue3-google-map": "^0.22.0"
   },
   "devDependencies": {
-    "@nuxtjs/google-fonts": "^3.2.0"
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@samk-dev/nuxt-vcalendar": "^1.0.4"
   }
 }

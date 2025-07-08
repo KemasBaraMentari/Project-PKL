@@ -1,11 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,  
-  components: true, // auto-import aktif
+  ssr: true,
+
+  // auto-import aktif
+  components: true,
+
   devtools: { enabled: false },
+
   nitro: {
     compatibilityDate: '2025-07-05'
   },
+
   app: {
 
     head: {
@@ -51,7 +56,7 @@ export default defineNuxtConfig({
         },                     
       ],
     },   
-  },    
+  },
 
-
+  modules: ['@samk-dev/nuxt-vcalendar'],
 })

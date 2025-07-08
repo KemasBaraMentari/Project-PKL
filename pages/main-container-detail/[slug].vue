@@ -66,7 +66,7 @@ if (!article) {
 </script>
 
 <style>
-.card .card-wrap {
+.card-wrap {
   background-color: #133260;
   background-image:
     linear-gradient(to left, #133260 65%, transparent 35%),

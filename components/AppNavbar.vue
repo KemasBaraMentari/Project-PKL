@@ -47,6 +47,7 @@ export default {
         {
           name: "Event",
           link: "#event",
+          path: "/schedule-detail"
         },
         {
           name: "Galeri",

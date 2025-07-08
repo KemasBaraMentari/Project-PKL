@@ -40,7 +40,7 @@
     <div class="row">
       <div class="col mb-5">
         <div class="mt-5 text-center">
-          <button class="btn btn-custom">Lihat Selengkapnya →</button>
+          <nuxt-link to="/schedule-detail"><button class="btn btn-custom">Lihat Selengkapnya →</button></nuxt-link>
         </div>
       </div>
     </div>
