@@ -1,15 +1,16 @@
 <template>
-    <div>
-        <AppNavbar />
-        <DetailNews />
-    </div>
+<div>
+    <AppNavbar />
+</div>
 </template>
 
 <script setup>
 import AppNavbar from '~/components/AppNavbar.vue';
+
+
 </script>
 
-<style>
+<style scoped>
 body {
   margin: 0;
   font-family: "Plus Jakarta Sans"; 

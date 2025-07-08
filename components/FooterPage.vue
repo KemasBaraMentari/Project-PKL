@@ -26,10 +26,10 @@
                 <h6 class="fw-semibold">Menu & Preferensi</h6>
                 <ul class="list-unstyled my-3">
                     <li class="mb-1"><a href="/" class="text-white text-decoration-none">Beranda</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Tentang Kami</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Event</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Blog</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Kontak</a></li>
+                    <li class="mb-1"><a href="/components/Profile.vue" class="text-white text-decoration-none">Tentang Kami</a></li>
+                    <li class="mb-1"><a href="/components/Schedule.vue" class="text-white text-decoration-none">Event</a></li>
+                    <li class="mb-1"><a href="/components/MainContainer.vue" class="text-white text-decoration-none">Blog</a></li>
+                    <li class="mb-1"><a href="/components/ContactAndAddress.vue" class="text-white text-decoration-none">Kontak</a></li>
                 </ul>
             </div>
 
