@@ -49,10 +49,10 @@
             <div class="col-lg-2 col-md-6">
                 <h6 class="fw-semibold">Sosial Media</h6>
                 <ul class="list-unstyled my-3">
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Facebook</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Instagram</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Youtube</a></li>
-                    <li class="mb-1"><a href="#" class="text-white text-decoration-none">Linkedin</a></li>
+                    <li class="mb-1"><a href="https://www.facebook.com/" class="text-white text-decoration-none">Facebook</a></li>
+                    <li class="mb-1"><a href="https://www.instagram.com/" class="text-white text-decoration-none">Instagram</a></li>
+                    <li class="mb-1"><a href="https://www.youtube.com/" class="text-white text-decoration-none">Youtube</a></li>
+                    <li class="mb-1"><a href="https://www.linkedin.com/" class="text-white text-decoration-none">Linkedin</a></li>
                 </ul>
             </div>
         </div>

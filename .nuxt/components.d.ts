@@ -13,6 +13,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = (T & DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }>)
 interface _GlobalComponents {
       'AppNavbar': typeof import("../components/AppNavbar.vue")['default']
+    'CardEvent': typeof import("../components/CardEvent.vue")['default']
     'ContactAndAddress': typeof import("../components/ContactAndAddress.vue")['default']
     'FooterPage': typeof import("../components/FooterPage.vue")['default']
     'Gallery': typeof import("../components/Gallery.vue")['default']
@@ -54,6 +55,7 @@ interface _GlobalComponents {
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
       'LazyAppNavbar': LazyComponent<typeof import("../components/AppNavbar.vue")['default']>
+    'LazyCardEvent': LazyComponent<typeof import("../components/CardEvent.vue")['default']>
     'LazyContactAndAddress': LazyComponent<typeof import("../components/ContactAndAddress.vue")['default']>
     'LazyFooterPage': LazyComponent<typeof import("../components/FooterPage.vue")['default']>
     'LazyGallery': LazyComponent<typeof import("../components/Gallery.vue")['default']>
@@ -101,6 +103,7 @@ declare module 'vue' {
 }
 
 export const AppNavbar: typeof import("../components/AppNavbar.vue")['default']
+export const CardEvent: typeof import("../components/CardEvent.vue")['default']
 export const ContactAndAddress: typeof import("../components/ContactAndAddress.vue")['default']
 export const FooterPage: typeof import("../components/FooterPage.vue")['default']
 export const Gallery: typeof import("../components/Gallery.vue")['default']
@@ -142,6 +145,7 @@ export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
 export const LazyAppNavbar: LazyComponent<typeof import("../components/AppNavbar.vue")['default']>
+export const LazyCardEvent: LazyComponent<typeof import("../components/CardEvent.vue")['default']>
 export const LazyContactAndAddress: LazyComponent<typeof import("../components/ContactAndAddress.vue")['default']>
 export const LazyFooterPage: LazyComponent<typeof import("../components/FooterPage.vue")['default']>
 export const LazyGallery: LazyComponent<typeof import("../components/Gallery.vue")['default']>

@@ -3,7 +3,7 @@
     <AppNavbar />
   </div>
 
-  <div class="card card-wrap m-5 rounded text-white" style="background-color: #133260; height: 300px;">
+  <div class="card card-wrap m-5 rounded text-white" style="background-color: #133260; height: 150px;">
     <div class="card-body d-flex align-items-center justify-content-end me-4">
       <p class="h4">{{ article.title }}</p>
     </div>
@@ -63,6 +63,8 @@ const article = articles.find((a) => a.slug === route.params.slug)
 if (!article) {
   throw createError({ statusCode: 404, statusMessage: 'Article not found' })
 }
+
+import FooterPage from '~/components/FooterPage.vue';
 </script>
 
 <style>

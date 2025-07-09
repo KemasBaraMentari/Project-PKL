@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Tabs -->
-        <div class="d-flex justify-content-start my-4 ms-5">
+        <div class="d-flex justify-content-start my-4" style="margin-left: 50px;">
             <ul class="nav nav-pills bg-light rounded-pill p-2">
                 <li class="nav-item" v-for="tab in tabs" :key="tab.id">
                     <a class="nav-link px-4 mx-2"
@@ -18,27 +18,30 @@
             <div v-if="activeTab === 'listEvent'">
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
                     <div class="col" v-for="(card, index) in agendaList" :key="index">
-                        <div class="card border-0 position-relative overflow-hidden rounded-4 h-100">
-                            <!-- Gambar -->
-                            <img :src="card.image" class="w-100 h-100" style="object-fit: cover; max-height: 500px;"
-                                :alt="card.title" />
+                        <NuxtLink :to="`/schedule-detail/${card.slug}`" class="text-decoration-none text-dark">
+                            <div class="card border-0 position-relative overflow-hidden rounded-4 h-100">
+                                <!-- Gambar -->
+                                <img :src="card.image" class="w-100 h-100" style="object-fit: cover; max-height: 500px;"
+                                    :alt="card.title" />
 
-                            <!-- Badge Baru -->
-                            <span
-                                class="badge bg-white text-dark position-absolute top-0 start-0 m-3 shadow-sm">Baru</span>
+                                <!-- Badge Baru -->
+                                <span
+                                    class="badge bg-white text-dark position-absolute top-0 start-0 m-3 shadow-sm">Baru</span>
 
-                            <!-- Overlay Konten -->
-                            <div class="position-absolute bottom-0 start-0 end-0 text-white p-3"
-                                style="background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));">
-                                <div class="mb-2 d-flex flex-wrap align-items-center gap-2">
-                                    <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{ card.date
+                                <!-- Overlay Konten -->
+                                <div class="position-absolute bottom-0 start-0 end-0 text-white p-3"
+                                    style="background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));">
+                                    <div class="mb-2 d-flex flex-wrap align-items-center gap-2">
+                                        <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{ card.date
                                         }}</small>
-                                    <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{ card.location
+                                        <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{
+                                            card.location
                                         }}</small>
+                                    </div>
+                                    <h5 class="fw-bold display-6 m-0">{{ card.title }}</h5>
                                 </div>
-                                <h5 class="fw-bold display-6 m-0">{{ card.title }}</h5>
                             </div>
-                        </div>
+                        </NuxtLink>
                     </div>
                 </div>
             </div>
@@ -63,6 +66,7 @@ import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import idLocale from '@fullcalendar/core/locales/id'
+import { NuxtLink } from '#components'
 
 export default {
     components: {
@@ -77,36 +81,42 @@ export default {
             ],
             agendaList: [
                 {
+                    slug: 'event-satu',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
                     image: '/images/agenda.jpg',
                 },
                 {
+                    slug: 'event-dua',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
                     image: '/images/agenda.jpg',
                 },
                 {
+                    slug: 'event-tiga',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
                     image: '/images/agenda.jpg',
                 },
                 {
+                    slug: 'event-satu',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
                     image: '/images/agenda.jpg',
                 },
                 {
+                    slug: 'event-satu',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
                     image: '/images/agenda.jpg',
                 },
                 {
+                    slug: 'event-satu',
                     title: 'Layanan Satu Pintu Digital',
                     date: '12 November 2025',
                     location: 'Baratajaya, Gubeng',
@@ -164,5 +174,4 @@ export default {
     color: #000;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
 </style>
