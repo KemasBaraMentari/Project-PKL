@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     compatibilityDate: '2025-07-05'
   },
 
+
+  css: [
+      // '@fullcalendar/common/main.css',
+      // '@fullcalendar/daygrid/main.css'
+    ],
   app: {
 
     head: {
@@ -47,6 +52,7 @@ export default defineNuxtConfig({
         },      
 
       ],
+      
       script: [              
         {
           src: 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js'

@@ -1,0 +1,37 @@
+
+/* fullcalender style */
+.fc-col-header-cell-cushion,
+.fc-daygrid-day-number {
+  color: var(--bs-black-always) !important;
+}
+
+.fc-scrollgrid-section.fc-scrollgrid-section-header {
+  background-color: var(--bg-header-calendar) !important;
+}
+
+.fc-h-event {
+  border: none !important;
+  background-color: #1157BC;
+}
+
+.fc-scrollgrid td {
+  border: 1px solid var(--base-color) !important;
+  /* warna abu muda */
+}
+
+.fc-scrollgrid th {
+  border: 1px solid var(--bg-header-calendar) !important;
+  /* warna abu muda */
+}
+
+.fc .fc-button-primary {
+  background-color: var(--bs-gray-200) !important;
+  border-color: var(--bs-gray-200) !important;
+  color: var(--bs-black) !important;
+  padding: 3px !important;
+}
+
+.fc-icon::before {
+  color: #000 !important;
+}
+/* end::fullcalender style */

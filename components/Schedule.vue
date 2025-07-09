@@ -40,7 +40,7 @@
     <div class="row">
       <div class="col mb-5">
         <div class="mt-5 text-center">
-          <nuxt-link to="/schedule-detail"><button class="btn btn-custom">Lihat Selengkapnya →</button></nuxt-link>
+          <nuxt-link to="/schedule-detail"><button class="btn btn-custom text-dark">Lihat Selengkapnya →</button></nuxt-link>
         </div>
       </div>
     </div>
@@ -95,7 +95,6 @@ const agendaList = [
 
 .btn-custom {
   background-color: white;
-  color: #0c2d62;
   border-radius: 25px;
   font-weight: 500;
   padding: 10px 20px;
@@ -114,17 +113,17 @@ const agendaList = [
 }
 
 .event-card {
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .event-card:hover {
-  transform: scale(1.05);
+  width:40% !important;
   z-index: 10;
   position: relative;
 }
 
 .card:hover {
-  width: 600px;
+  /* width: 600px; */
   transition: all 0.3s ease;
 }
 

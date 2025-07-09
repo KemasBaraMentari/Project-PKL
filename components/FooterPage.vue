@@ -7,16 +7,16 @@
                 <p class="my-1">Transparansi, partisipasi, dan pelayanan publik <br>yang efisien dalam genggaman Anda.</p>
                 <div class="d-flex gap-3 my-3">
                     <i class="bi bi-facebook fs-4">
-                        <a href="#"><img src="/images/facebook.png" alt=""></a>
+                        <a href="https://www.facebook.com/"><img src="/images/facebook.png" alt=""></a>
                     </i>
                     <i class="bi bi-instagram fs-4">
-                        <a href="#"><img src="/images/instagram.png" alt=""></a>
+                        <a href="https://www.instagram.com/"><img src="/images/instagram.png" alt=""></a>
                     </i>
                     <i class="bi bi-linkedin fs-4">
-                        <a href="#"><img src="/images/linkedin.png" alt=""></a>
+                        <a href="https://www.linkedin.com/"><img src="/images/linkedin.png" alt=""></a>
                     </i>
                     <i class="bi bi-youtube fs-4">
-                        <a href="#"><img src="/images/youtube.png" alt=""></a>
+                        <a href="https://www.youtube.com/"><img src="/images/youtube.png" alt=""></a>
                     </i>
                 </div>
             </div>
