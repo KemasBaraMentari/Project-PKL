@@ -61,12 +61,10 @@
 </template>
 
 <script>
-import { ref } from 'vue'
 import FullCalendar from '@fullcalendar/vue3'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import interactionPlugin from '@fullcalendar/interaction'
 import idLocale from '@fullcalendar/core/locales/id'
-import { NuxtLink } from '#components'
 
 export default {
     components: {

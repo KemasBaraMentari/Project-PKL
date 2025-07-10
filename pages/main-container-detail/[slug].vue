@@ -4,8 +4,9 @@
   </div>
 
   <div class="card card-wrap m-5 rounded text-white" style="background-color: #133260; height: 150px;">
-    <div class="card-body d-flex align-items-center justify-content-end me-4">
-      <p class="h4">{{ article.title }}</p>
+    <div class="card-body d-flex align-items-center justify-content-between me-4">
+      <p class="ms-5">Home / Detail Berita</p>
+      <p class="h4 me-3">{{ article.title }}</p>
     </div>
   </div>
 

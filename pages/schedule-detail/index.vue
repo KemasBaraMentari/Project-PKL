@@ -3,7 +3,6 @@
     <AppNavbar />
     <SectionSchedule />
     <SectionGridSchedule />
-    <CardEvent />
     <FooterPage />
 </div>
 </template>
@@ -12,7 +11,6 @@
 import AppNavbar from '~/components/AppNavbar.vue';
 import SectionSchedule from '~/components/SectionSchedule.vue'
 import SectionGridSchedule from '~/components/SectionGridSchedule.vue'
-import CardEvent from '~/components/CardEvent.vue'
 import FooterPage from '~/components/FooterPage.vue';
 </script>
 

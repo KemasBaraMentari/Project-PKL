@@ -16,21 +16,37 @@
 
     <div class="row g-4 mt-4  flex-nowrap">
       <div class="event-card" v-for="(card, index) in agendaList" :key="index" style="width: calc(100%/3);">
-        <div class="card border-0 position-relative overflow-hidden rounded-4">
-          <!-- Gambar -->
-          <img :src="card.image" class="w-100 h-100 object-fit-cover" style="max-height: 550px;" :alt="card.title" />
+        <div class="card text-white overflow-hidden position-relative border-0 rounded-4"
+          @mouseover="hoverIndex = index" @mouseleave="hoverIndex = null"
+          style="height: 500px; background-size: cover; background-position: center"
+          :style="{ backgroundImage: `url(${card.image})` }">
 
           <!-- Badge Baru -->
           <span class="badge bg-white text-dark position-absolute top-0 start-0 m-3 shadow-sm">Baru</span>
 
           <!-- Overlay Konten -->
-          <div class="position-absolute bottom-0 start-0 end-0 text-white p-3"
-            style="background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));">
-            <div class="mb-2 d-flex flex-wrap align-items-center gap-2">
-              <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{ card.date }}</small>
-              <small class="px-2 py-1 rounded" style="border: 1px solid white;">{{ card.location }}</small>
+          <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-end p-4 transition"
+            :class="hoverIndex === index ? 'bg-dark bg-opacity-75' : ''">
+            <p class="mb-1 small">
+              <span class="badge bg-transparent text-white me-2" style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.date }}</span>
+              <span v-if="hoverIndex !== index" class="badge bg-transparent text-white" style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.location }}</span>
+            </p>
+
+            <h5 class="fw-bold display-6">{{ card.title }}</h5>
+
+            <!-- Konten saat hover -->
+            <div v-if="hoverIndex === index" class="mt-2 text-white">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <span><img src="/images/map.svg"><i class="bi bi-geo-alt-fill me-1"></i>{{ card.location }}</span>
+                <span><img src="/images/gen.svg"><i class="bi bi-clock me-1"></i> {{ card.time }}</span>
+              </div>
+              <p>{{ card.description }}</p>
+              <div class="text-end">
+                <button class="btn" style="border-radius: 100%;">
+                  <img src="/images/arrow-right.svg">
+                </button>
+              </div>
             </div>
-            <h5 class="fw-bold display-6 m-0">{{ card.title }}</h5>
           </div>
         </div>
       </div>
@@ -40,7 +56,8 @@
     <div class="row">
       <div class="col mb-5">
         <div class="mt-5 text-center">
-          <nuxt-link to="/schedule-detail"><button class="btn btn-custom text-dark">Lihat Selengkapnya →</button></nuxt-link>
+          <nuxt-link to="/schedule-detail"><button class="btn btn-custom text-dark">Lihat Selengkapnya
+              →</button></nuxt-link>
         </div>
       </div>
     </div>
@@ -48,24 +65,34 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const hoverIndex = ref(null)
+
 const agendaList = [
   {
-    title: 'Layanan Satu Pintu Digital',
-    date: '12 November 2025',
-    location: 'Baratajaya, Gubeng',
     image: '/images/agenda.jpg',
+    date: '20 November 2025',
+    location: 'Tegalsari, Surabaya',
+    title: 'Layanan Satu Pintu Digital',
+    time: '10:00 - 15:00',
+    description: 'Kenali sistem e-government terbaru yang akan mendukung transparansi dan efisiensi layanan publik.'
   },
   {
-    title: 'Layanan Satu Pintu Digital',
-    date: '12 November 2025',
-    location: 'Baratajaya, Gubeng',
     image: '/images/agenda.jpg',
+    date: '20 November 2025',
+    location: 'Tegalsari, Surabaya',
+    title: 'Layanan Satu Pintu Digital',
+    time: '10:00 - 15:00',
+    description: 'Kenali sistem e-government terbaru yang akan mendukung transparansi dan efisiensi layanan publik.'
   },
   {
-    title: 'Layanan Satu Pintu Digital',
-    date: '12 November 2025',
-    location: 'Baratajaya, Gubeng',
     image: '/images/agenda.jpg',
+    date: '20 November 2025',
+    location: 'Tegalsari, Surabaya',
+    title: 'Layanan Satu Pintu Digital',
+    time: '10:00 - 15:00',
+    description: 'Kenali sistem e-government terbaru yang akan mendukung transparansi dan efisiensi layanan publik.'
   },
 ];
 </script>
@@ -117,7 +144,7 @@ const agendaList = [
 }
 
 .event-card:hover {
-  width:40% !important;
+  width: 40% !important;
   z-index: 10;
   position: relative;
 }
