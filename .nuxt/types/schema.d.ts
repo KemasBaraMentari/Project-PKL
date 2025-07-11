@@ -64,6 +64,8 @@ declare module 'nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   apiURL: string,
+
    vcalendar: any,
   }
 }

@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
+  runtimeConfig: {
+    public: {
+      apiURL: process.env.NUXT_API_BASE_URL
+    }
+  },
 
   // auto-import aktif
   components: true,

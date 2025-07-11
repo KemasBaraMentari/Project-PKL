@@ -645,6 +645,7 @@ const _inlineRuntimeConfig = {
     }
   },
   "public": {
+    "apiURL": "https://demo82.energeek.co.id/admin-landing-page-energeek/",
     "vcalendar": ""
   }
 };

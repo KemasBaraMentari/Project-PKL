@@ -116,13 +116,13 @@
     <section class="py-5" v-if="activeTab === 'sop'">
       <div class="container">
         <!-- Badge SOP Kerja -->
-        <span class="badge text-dark fw-semibold rounded px-4 py-2 mb-3"
+        <span class="badge text-dark fw-light rounded px-4 py-2 mb-3"
           style="font-size: 14px;">
           SOP Kerja
         </span>
 
         <!-- Card Box -->
-        <div class="d-flex justify-content-between align-items-center bg-light border rounded shadow-sm p-3">
+        <div class="d-flex justify-content-between align-items-center border rounded p-3">
           <!-- Kiri: Ikon dan Teks -->
           <a :href="pdfUrl" target="_blank" class="text-decoration-none text-dark d-flex align-items-center gap-3">
             <img src="/public/images/pdf.png" alt="PDF Icon" style="width: 40px; height: auto;" />
