@@ -2,10 +2,10 @@
   <div class="container-fluid my-2 p-3" id="blog">
     <div class="row">
       <div class="col">
-        <div class="container py-5">
+        <div class="container mt-5 mb-0">
           <!-- Section Title -->
-          <div class="text-center mb-4">
-            <span class="badge text-dark mb-0">Blog & Bacaan</span>
+          <div class="text-center mb-0">
+            <span class="badge text-dark border-0 mb-2 rounded-pill" style="background-color: #ffeaa7">Blog & Bacaan</span>
             <h2 class="fw-bold">Cerita Transformasi & Inovasi Kota</h2>
             <p class="text-muted">
               Baca artikel, opini, dan kisah sukses seputar teknologi, kota pintar, dan inovasi layanan publik di
@@ -18,7 +18,7 @@
 
     <div class="row p-5">
         <!-- Featured Article -->
-        <div class="card border-0 mb-4">
+        <div class="card border-0 mb-2">
           <nuxt-link to="/main-container-detail/smart-digital-systems" class="text-decoration-none text-dark">
             <img src="/images/images.jpg" class="img-fluid rounded-3" style="height: 400px; width: 100%; object-fit: cover;">
             <div class="card-body px-0">
@@ -27,7 +27,7 @@
               </h5>
             </div>
           </nuxt-link>
-          <div class="d-flex align-items-center">
+          <div class="d-flex align-items-center" style="margin-top: -15px;">
             <img src="/images/ava.png" alt="Author" class="rounded-circle me-2" width="24" height="24" />
             <small class="text-muted">Nana Masyadi &nbsp;•&nbsp; 12 Maret 2025</small>
           </div>
@@ -44,7 +44,7 @@
                   <h6 class="card-title fw-semibold rounded">{{ item.title }}</h6>
                 </div>
               </NuxtLink>
-              <div class="card-footer bg-white border-0 d-flex align-items-center">
+              <div class="card-footer bg-white border-0 d-flex align-items-center" style="margin-top: -20px;">
                 <img src="/images/ava.png" alt="Author" class="rounded-circle me-2" width="24" height="24" />
                 <small class="text-muted">Nana Masyadi • 12 Maret 2025</small>
               </div>

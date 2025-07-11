@@ -1,8 +1,9 @@
 <template>
-  <div class="container-fluid text-white py-5 my-5" id="layanan">
-    <div class="row mx-auto my-5">
-      <!-- Kiri: Informasi dan tombol -->
-      <div class="col-lg-4 px-5 my-auto">
+  <div class="container-fluid text-white" id="layanan">
+    <div class="row mx-auto">
+
+      <!-- Kiri : Informasi dan Tombol -->
+      <div class="col-lg-4 col-md-4 col-sm-4 my-auto">
         <span class="badge text-dark fw-semibold rounded-pill px-3 py-2"
           style="font-size: 18px; background-color: #ffeaa7;">Layanan</span>
         <h2 class="fw-bold mt-3">Surabaya Untuk Warga:<br />Kota Yang Terus Hidup<br />Dan Bergerak</h2>
@@ -10,13 +11,14 @@
           Temukan layanan dan inisiatif kota yang memudahkan hidup Anda — dari utilitas harian hingga tempat wisata,
           dari peluang bisnis hingga kemudahan mobilitas.
         </p>
-        <NuxtLink to="/service-detail" class="btn btn-light fw-semibold mt-3 rounded-pill px-4 py-2">Lihat Selengkapnya</NuxtLink>
-
-      <!-- Kanan : Card -->
+        <NuxtLink to="/service-detail" class="btn btn-light fw-semibold mt-3 rounded-pill px-4 py-2">Lihat Selengkapnya
+        </NuxtLink>
       </div>
-      <div class="col-sm-8">
-        <div class="row mb-4">
-          <div class="col-sm-4">
+
+
+      <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="row my-3 mt-5">
+          <div class="col-lg-5 col-md-5 col-sm-5">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body position-relative">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +55,6 @@
                     </filter>
                   </defs>
                 </svg>
-
                 <h5 class="fw-bold mt-4">Transportasi & Mobilitas</h5>
                 <p class="mb-0">
                   Mau ke mana pun, lebih mudah. Temukan info Suroboyo Bus, parkir, terminal, hingga sistem transportasi
@@ -62,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-8">
+          <div class="col-lg-7 col-md-7 col-sm-7">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body position-relative">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,8 +109,8 @@
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-sm-8">
+        <div class="row mb-5">
+          <div class="col-lg-7 col-md-7 col-sm-7">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body position-relative">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +147,6 @@
                     </filter>
                   </defs>
                 </svg>
-
                 <h5 class="fw-bold mt-4">Transportasi & Mobilitas</h5>
                 <p class="mb-0">
                   Mau ke mana pun, lebih mudah. Temukan info Suroboyo Bus, parkir, terminal, hingga sistem transportasi
@@ -155,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-lg-5 col-md-5 col-sm-5">
             <div class="card shadow-sm border-0 h-100">
               <div class="card-body position-relative">
                 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,7 +192,6 @@
                     </filter>
                   </defs>
                 </svg>
-
                 <h5 class="fw-bold mt-4">Transportasi & Mobilitas</h5>
                 <p class="mb-0">
                   Mau ke mana pun, lebih mudah. Temukan info Suroboyo Bus, parkir, terminal, hingga sistem transportasi
@@ -207,19 +206,19 @@
   </div>
 </template>
 
-<script setup>
+<script>
 
 </script>
 
-<style scoped>
-.container-fluid {
+<style>
+#layanan {
   background-color: #133260;
   background-image:
-    linear-gradient(to left, #133260 65%, transparent 35%),
+    linear-gradient(to left, #133260 68%, transparent 32%),
     url("/images/pattern.svg");
 }
 
-.row .mx-auto .my-5 {
+.col-lg-4 .my-5 {
   margin-top: 15px;
   margin-bottom: 15px;
 }

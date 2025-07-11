@@ -1,7 +1,7 @@
 <template>
-    <div class="container py-5" id="galeri">
-        <div class="text-center mb-5">
-            <span class="badge text-dark mb-2">Galeri</span>
+    <div class="container py-2" id="galeri">
+        <div class="text-center mb-0">
+            <span class="badge text-dark border-0 mb-2 rounded-pill" style="background-color: #ffeaa7">Galeri</span>
             <h2 class="fw-bold">Agenda Kota & Kegiatan Warga</h2>
             <p class="text-muted">
                 Jelajahi momen-momen spesial dan wajah kota melalui galeri visual Surabaya.

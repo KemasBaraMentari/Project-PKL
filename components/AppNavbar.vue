@@ -32,30 +32,33 @@ export default {
         },
         {
           name: "Tentang Kami",
-          link: "#tentangkami",
+          link: "/#tentangkami",
+          path: '/components/Profile.vue'
         },
         {
           name: "Layanan",
-          link: "#layanan",
+          link: "/#layanan",
           path: '/service-detail'
         },
         {
           name: "Blog",
-          link: "#blog",
+          link: "/#blog",
           path: "/main-container-detail"
         },
         {
           name: "Event",
-          link: "#event",
+          link: "/#event",
           path: "/schedule-detail"
         },
         {
           name: "Galeri",
-          link: "#galeri",
+          link: "/#galeri",
+          path: '/components/Gallery.vue'
         },
         {
           name: "Kontak",
-          link: "#kontak",
+          link: "/#kontak",
+          path: '/components/ContactAndAddress.vue'
         }
       ],
       activeIndex: 0, // default active

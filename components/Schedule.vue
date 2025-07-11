@@ -22,14 +22,17 @@
           :style="{ backgroundImage: `url(${card.image})` }">
 
           <!-- Badge Baru -->
-          <span class="badge bg-white text-dark position-absolute top-0 start-0 m-3 shadow-sm">Baru</span>
+          <span class="badge bg-white text-dark position-absolute top-0 start-0 m-3 shadow-sm"
+            style="z-index: 15;">Baru</span>
 
           <!-- Overlay Konten -->
           <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-end p-4 transition"
             :class="hoverIndex === index ? 'bg-dark bg-opacity-75' : ''">
             <p class="mb-1 small">
-              <span class="badge bg-transparent text-white me-2" style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.date }}</span>
-              <span v-if="hoverIndex !== index" class="badge bg-transparent text-white" style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.location }}</span>
+              <span class="badge bg-transparent text-white me-2"
+                style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.date }}</span>
+              <span v-if="hoverIndex !== index" class="badge bg-transparent text-white"
+                style="border: 1px solid white; font-size: 15px; border-radius: 25px;">{{ card.location }}</span>
             </p>
 
             <h5 class="fw-bold display-6">{{ card.title }}</h5>
@@ -40,11 +43,15 @@
                 <span><img src="/images/map.svg"><i class="bi bi-geo-alt-fill me-1"></i>{{ card.location }}</span>
                 <span><img src="/images/gen.svg"><i class="bi bi-clock me-1"></i> {{ card.time }}</span>
               </div>
-              <p>{{ card.description }}</p>
-              <div class="text-end">
-                <button class="btn" style="border-radius: 100%;">
-                  <img src="/images/arrow-right.svg">
-                </button>
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p>{{ card.description }}</p>
+                </div>
+                <div>
+                  <button class="btn rounded-circle">
+                    <img src="/images/arrow-down.svg" style="height: 50px;">
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -71,6 +78,7 @@ const hoverIndex = ref(null)
 
 const agendaList = [
   {
+    slug: 'event-satu',
     image: '/images/agenda.jpg',
     date: '20 November 2025',
     location: 'Tegalsari, Surabaya',
@@ -79,6 +87,7 @@ const agendaList = [
     description: 'Kenali sistem e-government terbaru yang akan mendukung transparansi dan efisiensi layanan publik.'
   },
   {
+    slug: 'event-satu',
     image: '/images/agenda.jpg',
     date: '20 November 2025',
     location: 'Tegalsari, Surabaya',
@@ -87,6 +96,7 @@ const agendaList = [
     description: 'Kenali sistem e-government terbaru yang akan mendukung transparansi dan efisiensi layanan publik.'
   },
   {
+    slug: 'event-satu',
     image: '/images/agenda.jpg',
     date: '20 November 2025',
     location: 'Tegalsari, Surabaya',

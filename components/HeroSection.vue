@@ -63,11 +63,11 @@ onBeforeUnmount(() => {
 .hero-section {
   background-color: #133260;
   background-image:
-    linear-gradient(to left, #133260 50%, transparent 50%),
+    linear-gradient(to left, #133260 51%, transparent 49%),
     url('/images/Pattern.svg');
   background-size: contain;
   /* background-position: center; */
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
   /* background-position: left center, left center; */
   border-radius: 20px;
   margin: auto 30px;
